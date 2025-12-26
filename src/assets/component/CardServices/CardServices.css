@@ -1,0 +1,38 @@
+.card-services{
+    width: 500px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+    .number{
+        font-size: 40px;
+        color: var(--gold);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        gap: 3px;
+    }
+    h3{
+        font-size: 25px;
+        font-weight: 500;
+        color: var(--black);
+        margin-bottom: 20px;
+    }
+    .dec{
+       color: var(--gray); 
+    }
+
+}
+.card-services:hover , .card-pricing:hover{
+border: 1px solid var(--gold);
+scale: 1.009;
+box-shadow: 0 0 20px var(--gold);
+}
+@media (max-width:1570px) {
+ .card-services{
+    width: 400px;
+    h3{
+        font-size: 15px;
+        font-weight: 400;
+    }
+ }   
+}

@@ -1,0 +1,26 @@
+.pricing{
+    margin-top: 130px ;
+    padding: var(--pad);
+    .pricing-p{
+        color: var(--gold);
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+.pricing-div{
+    text-align: center;
+}
+    .pricing-h3{
+        font-size: 60px;
+        
+    }
+    
+}
+.all-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 130px;
+}

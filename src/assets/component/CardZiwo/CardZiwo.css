@@ -1,0 +1,49 @@
+.card-ziwo {
+  padding: 50px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  ul {
+    list-style: none;
+    li {
+      color: var(--white);
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+  }
+  h3 {
+    color: var(--white);
+    margin-bottom: 15px;
+    font-size: 30px;
+    transition: 0.3s ease-in-out;
+  }
+}
+.number-card {
+  color: var(--gold);
+  margin-bottom: 20px;
+  font-size: 40px;
+   
+}
+
+.border-card{
+    border: 1px solid var(--gray);
+    box-shadow: 0 0  25px rgb(27, 24, 24) ;
+    border-radius: 10px;
+}
+.card-ziwo:hover h3{
+  color: var(--gold);
+}
+
+@media (max-width:1500px) {
+ .card-ziwo{
+  h3{
+    font-size: 18px;
+  }
+  ul{
+    li{
+      font-size: 16px;
+    }
+  }
+ } 
+}

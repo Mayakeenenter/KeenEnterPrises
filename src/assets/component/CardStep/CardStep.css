@@ -1,0 +1,39 @@
+.step-div {
+  width: 80px;
+  border-radius: 12px;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  color: var(--black);
+  background: linear-gradient(180deg, #edcb78, #f7e4b2, #fee08b);
+  position: relative;
+}
+.step-div::after {
+  content: "";
+  width: 180px;
+  height: 1px;
+  background-color: #eee8e2;
+  position: absolute;
+  top: 50%;
+  left: 115%;
+}
+
+.card-step{
+    width: 400px;
+    h3{
+        font-size: 25px;
+        color: var(--gold);
+        margin-bottom: 15px;
+    }
+    p{
+        color:var(--gray);
+    }
+   
+}
+body.dark-mode  .step{
+      color: var(--white);
+    }
+@media (max-width: 1600px) {
+  .card-step{
+    width: 300px;
+  }
+}

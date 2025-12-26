@@ -1,0 +1,12 @@
+.value{
+    padding: var(--pad);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--black);
+    h3{
+        text-align: center;
+        font-size: 30px;
+        color: var(--gold);
+         margin-bottom: 20px;
+    }
+}

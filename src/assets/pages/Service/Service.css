@@ -1,0 +1,14 @@
+.all-step{
+    padding: var(--pad);
+    margin-top: 130px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+@media (max-width: 1400px) {
+  .all-step{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+}

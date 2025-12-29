@@ -1,0 +1,40 @@
+.CardFeatureWhatsApp{
+    border: 1px solid var(--gold);
+    border-radius: 10px;
+    background-color: #fcb90018;;
+    padding: 20px ;
+    width: 300px;
+    transition:box-shadow 0.3s ease-in-out ;
+    svg{
+        margin-bottom: 16px;
+        color: var(--gold);
+        font-size: 30px;
+    }
+    h3{
+        font-weight: 700px;
+        font-size: 20px;
+        margin-bottom: 16px;
+        text-align: start;
+    }
+    p{
+        font-size: 20px;
+        color: var(--gray);
+    }
+}
+.CardFeatureWhatsApp:hover{
+    box-shadow: 0 0 25px var(--gold);
+    h3{
+        color: var(--gold);
+    }
+}
+
+@media (max-width:1560px) {
+    .CardFeatureWhatsApp{
+        width: 250px;
+    }
+}
+@media (max-width:650px) {
+    .CardFeatureWhatsApp{
+        width: 100%;
+    }
+}

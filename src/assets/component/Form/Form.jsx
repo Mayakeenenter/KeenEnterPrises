@@ -7,10 +7,10 @@ import DrawingArrow from "../DrawingArrow/DrawingArrow";
 function Form() {
   return (
     <div className="contact-form">
-      <div class="container">
+      <div className="container">
         <DrawingArrow/>
-        <form class="form" action="">
-          <div class="input-field">
+        <form className="form" action="">
+          <div className="input-field">
             <input
               required
               placeholder=" "
@@ -21,7 +21,7 @@ function Form() {
             />
             <label for="username">Lead Name</label>
           </div>
-          <div class="input-field">
+          <div className="input-field">
             <input
               required
               placeholder=" "
@@ -32,7 +32,7 @@ function Form() {
             />
             <label for="email">Phone</label>
           </div>
-          <div class="input-field">
+          <div className="input-field">
             <input
               required
               placeholder=" "
@@ -43,7 +43,7 @@ function Form() {
             />
             <label for="username">E-mail</label>
           </div>
-          <div class="input-field">
+          <div className="input-field">
             <input
               required
               placeholder=" "
@@ -54,7 +54,7 @@ function Form() {
             />
             <label for="username">Subject</label>
           </div>
-          <div class="input-field">
+          <div className="input-field">
             <input
               required
               placeholder=" "
@@ -66,7 +66,7 @@ function Form() {
             <label for="username">Your message (option)</label>
           </div>
 
-          <button class="btn">Call me</button>
+          <button className="btn">Call me</button>
 
           <div className="report">
             <p className="p-repore">

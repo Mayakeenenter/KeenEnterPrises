@@ -11,29 +11,7 @@
         font-size: 45px;
         text-align: center;
     }
-    .whatsAppSolution{
-      margin-top: 50px;
-      position: relative;
-      margin-left: 20px;
-      h3{
-        font-size: 30px;
-        color: var(--gold);
-        margin-bottom: 10px;
-      }
-      p{
-        font-size: 20px;
-      }
-    }
-    .whatsAppSolution::after{
-      content: "";
-      position: absolute;
-      width: 5px;
-      height: 100%;
-      top: 0;
-      background-color: var(--gold);
-      left: -20px;
-
-    }
+   
 }
 .div-property{
   text-align: center;

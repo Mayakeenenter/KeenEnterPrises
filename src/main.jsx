@@ -17,6 +17,8 @@ import NavBar from "./assets/component/NavBar/NavBar.jsx";
 import Footer from "./assets/component/Footer/Footer.jsx";
 import InformationBitrix24 from "./assets/pages/InformationBitrix24/InformationBitrix24.jsx";
 import PropertyFinder from "./assets/pages/PropertyFinder/PropertyFinder .jsx";
+import PartnerPage from "./assets/pages/Partner/Partner.jsx";
+
 
 const RootLayout = () => (
   <>
@@ -60,38 +62,14 @@ const router = createBrowserRouter([
       {
         path : "/propertyfinder",
         element: <PropertyFinder/>
+      },{
+        path : "/partner",
+        element : < PartnerPage/>
       }
     ],
   },
 ]);
 
-// const router = createBrowserRouter([
-//   {
-//   path: "/",
-//   element: <Home/>
-// },
-// {
-//   path: "/bitrix",
-//   element: <Products/>
-// },
-// {
-//   path : "/ziwo",
-//   element: <Ziwo/>
-// }
-// ,
-// {
-//   path: "/service",
-//   element: <Service/>
-// },
-// {
-//   path:"/about",
-//   element: <AboutUs/>
-// },
-// {
-//   path: "/contact",
-//   element: <ContactUs/>
-// }
-// ]);
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <AppWrapper router={router} />

@@ -1,58 +1,69 @@
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { faMessage } from "@fortawesome/free-solid-svg-icons/faMessage";
 import "./Partner.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckCircle, faDatabase, faRobot, faWifi } from "@fortawesome/free-solid-svg-icons";
+import CardFeatureWhatsApp from "../CardFeatureWhatsApp/CardFeatureWhatsApp";
 
 export default function Partner() {
   return (
     <>
       <div className="partner">
-        <div class="parent">
-          <div class="card">
-            <div class="content-box">
-              <span class="card-title">Our partner</span>
-              <p class="card-content">Advanced WhatsApp Marketing Solutions</p>
-              <span class="see-more">
-                As an Official Partner of Gupshup, a global leader in
-                conversational messaging, we empower your business with the most
-                robust WhatsApp communication tools. From full automation and
-                verified business accounts to deep CRM integration, we ensure
-                every lead is captured and no opportunity is missed.
-              </span>
-              <ul className="list-whatsApp">
-                The Core Features:
-                <li>
-                  <FontAwesomeIcon icon={faCheck} style={{ color: "#fff" }} />
-                  Official WhatsApp API: Get your Green Tick and build customer
-                  trust.
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faCheck} style={{ color: "#fff" }} />
-                  Automated Chatbots: Provide 24/7 instant support to your
-                  clients.
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faCheck} style={{ color: "#fff" }} />
-                  Seamless CRM Sync: Every WhatsApp conversation is
-                  automatically logged into your Keen Enterprises CRM.
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faCheck} style={{ color: "#fff" }} />
-                  Broadcasting & Notifications: Send official marketing
-                  campaigns and alerts with zero risk of being blocked.
-                </li>
-              </ul>
+        
+        <div className="parent">
+          <div className="card-partner">
+            <img src="/Gupshup_Logo.webp" alt="gupshup" className="gupshup" />
+            <h3>Advanced WhatsApp Marketing Solutions</h3>
+            <p>
+              As an <span>Official Partner of Gupshup</span>, a global leader in
+              conversational messaging, we empower your business with the most
+              robust WhatsApp communication tools.
+            </p>
+            <p>
+              From full automation and verified business accounts to deep CRM
+              integration, we ensure every lead is captured and no opportunity
+              is missed.
+            </p>
+          </div>
+          <div className="whatsapp-business">
+            <div className="message">
+              <FontAwesomeIcon icon={faMessage} />
             </div>
-            <div class="date-box">
-              <img
-                src="/WhatsApp_Business_API_Gupshup.webp"
-                alt="whatsApp"
-                className="whatsApp"
-              />
-            </div>
+            <h4>WhatsApp Business</h4>
+            <ul>
+              <li>
+                <FontAwesomeIcon icon={faCheckCircle} />
+                Official API Access
+              </li>
+              <li> <FontAwesomeIcon icon={faCheckCircle} />Green Tick Verification</li>
+              <li><FontAwesomeIcon icon={faCheckCircle} />24/7 Automation</li>
+              <li><FontAwesomeIcon icon={faCheckCircle} />CRM Integration</li>
+            </ul>
           </div>
         </div>
-
-        <img src="/Gupshup_Logo.webp" alt="gupshup" className="gupshup" />
+      </div>
+      <div className="featuresWhatsApp">
+        <div className="titlefeature">
+          <h3 >The Core Features</h3>
+        </div>
+        <div className="allcardFeaturewhats">
+          <CardFeatureWhatsApp
+          icon={<FontAwesomeIcon icon={faCheckCircle} />}
+          title={"Official WhatsApp API"}
+          text={"Get your Green Tick and build customer trust with verified business accounts."}/>
+          <CardFeatureWhatsApp
+          icon={<FontAwesomeIcon icon={faRobot} />}
+         
+          title={"Automated Chatbots"}
+          text={"Provide 24/7 instant support to your clients with intelligent AI agents."}/>
+          <CardFeatureWhatsApp
+          icon={<FontAwesomeIcon icon={faDatabase} />}
+          title={"Seamless CRM Sync"}
+          text={"Every WhatsApp conversation is automatically logged into your KEEN Enterprises CRM."}/>
+          <CardFeatureWhatsApp
+          icon={<FontAwesomeIcon icon={faWifi} />}
+          title={"Broadcasting & Notifications"}
+          text={"Send official marketing campaigns and alerts with zero risk of being blocked."}/>
+        </div>
       </div>
     </>
   );

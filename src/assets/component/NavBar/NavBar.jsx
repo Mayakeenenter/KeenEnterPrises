@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 import GoogleSearch from "../GoogleSearch/GoogleSearch";
 function NavBar() {
   const [darkMood, setdarkMood] = useState(() => {
-    return localStorage.getItem("mood") === "dark"; 
+    return localStorage.getItem("mood") === "dark";
   });
   const [showSearch, setShowSearch] = useState(false);
   const location = useLocation();
@@ -40,7 +40,7 @@ function NavBar() {
     }
   }, [darkMood]);
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 700px)");
+    const mediaQuery = window.matchMedia("(max-width: 840px)");
 
     const changeColor = () => {
       if (window.scrollY > 50) {
@@ -65,7 +65,6 @@ function NavBar() {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
   }, []);
-  // const showMenu = !mobile || open;
   return (
     <section className={`Nav ${change ? "change" : ""}`}>
       <div className="title-logo">
@@ -77,7 +76,9 @@ function NavBar() {
       <nav>
         <ul className={`list-link ${showmenu ? "open" : ""}`}>
           <li>
-            <NavLink to={"/"} onClick={toggleMenu}>home</NavLink>
+            <NavLink to={"/"} onClick={toggleMenu}>
+              home
+            </NavLink>
           </li>
           <li className={`li-products ${isLocation ? "prodact-active" : ""}`}>
             products
@@ -85,22 +86,50 @@ function NavBar() {
             <ul className="new-list">
               <li>
                 <FontAwesomeIcon icon={faCheck} />
-                <NavLink to={"/bitrix"} onClick={toggleMenu}> Bitrix24 </NavLink>
+                <NavLink to={"/bitrix"} onClick={toggleMenu}>
+                  Bitrix24
+                </NavLink>
               </li>
               <li>
                 <FontAwesomeIcon icon={faCheck} />
-                <NavLink to={"/ziwo"} onClick={toggleMenu}> ziwo </NavLink>
+                <NavLink to={"/ziwo"} onClick={toggleMenu}>
+                  ziwo
+                </NavLink>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faCheck} />
+                <NavLink to={"/partner"} onClick={toggleMenu}>
+                  Gupshup
+                </NavLink>
+              </li>
+            </ul>
+          </li>
+          <li className={`li-products ${isLocation ? "prodact-active" : ""}`}>
+            service
+            <FontAwesomeIcon icon={faAngleDown} />
+            <ul className="new-list">
+              <li>
+                <FontAwesomeIcon icon={faCheck} />
+                <NavLink to={"/service"} onClick={toggleMenu}>
+                  Our Service
+                </NavLink>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faCheck} />
+                <NavLink to={"/propertyfinder"} >Property Finder & Bayut</NavLink>
               </li>
             </ul>
           </li>
           <li>
-            <NavLink to={"/service"} onClick={toggleMenu}>service</NavLink>
+            <NavLink to={"/about"} onClick={toggleMenu}>
+              about us
+            </NavLink>
           </li>
-          <li>
-            <NavLink to={"/about"} onClick={toggleMenu}>about us</NavLink>
-          </li>
-          <li>
-            <NavLink to={"/contact"} onClick={toggleMenu}>contact us</NavLink>
+
+          <li className="contact">
+            <NavLink to={"/contact"} onClick={toggleMenu}>
+              contact us
+            </NavLink>
           </li>
           <div
             className="search-icon-wrapper"
@@ -110,7 +139,7 @@ function NavBar() {
           </div>
         </ul>
         <label className="switch">
-          <input type="checkbox" onChange={toggleDarkMood} checked={darkMood}/>
+          <input type="checkbox" onChange={toggleDarkMood} checked={darkMood} />
           <span className="slider"></span>
         </label>
       </nav>

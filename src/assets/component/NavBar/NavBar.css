@@ -10,7 +10,6 @@
   z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: transparent;
- 
 
   .title {
     text-decoration: none;
@@ -29,7 +28,6 @@
 }
 .Nav.change {
   background-color: var(--black);
-   /* background-color: var(--bg-color); */
   box-shadow: 0 4px 8px rgba(26, 25, 25, 0.1);
   h1 {
     color: var(--white);
@@ -38,11 +36,18 @@
   .li-products {
     color: var(--white);
   }
-
-  svg,
-  .li-products svg,
-  .list-link svg {
+  .icon-bar {
     color: var(--white);
+  }
+  .list-link{
+    .contact {
+    a {
+      color: var(--gold);
+    }
+  }
+  }
+  .list-link svg {
+    color: var(--white) !important;
   }
   .list-link li:hover,
   .list-link li a.active,
@@ -58,6 +63,11 @@
   gap: 20px;
   list-style: none;
   font-size: 20px;
+  .contact {
+    a {
+      color: var(--gold);
+    }
+  }
   li a,
   .li-products {
     text-decoration: none;
@@ -107,6 +117,7 @@
     position: absolute;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: 0.3s ease-in-out;
+    width: 13vw;
     top: 65px;
     list-style: none;
     padding: 10px;
@@ -143,7 +154,6 @@ nav {
     font-size: 17px;
     position: relative;
     display: inline-block;
-
   }
   .switch input {
     opacity: 0;
@@ -190,14 +200,12 @@ nav {
     transform: translateX(1.5em);
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
   .Nav {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+    flex-direction: column;
   }
 }
+
 @media (max-width: 992px) {
   .Nav h1 {
     font-size: 25px;
@@ -208,17 +216,21 @@ nav {
   display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 840px) {
   .Nav {
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
   }
-.li-products{
-  .new-list{
-    top: 30px;
-    left: 96px;
+  .li-products {
+    color: var(--black) !important;
+    .new-list {
+      top: 30px;
+      left: 96px;
+      width: 30vw;
+    }
   }
-}
   .icon-bar {
     display: block;
     color: var(--black);
@@ -241,13 +253,18 @@ nav {
     transition: 0.6s ease-in-out;
     z-index: 1000;
     gap: 30px;
+
+    li {
+      a {
+        color: var(--black) !important;
+      }
+    }
   }
 
   .list-link.open {
     right: 0;
   }
 }
-
 @media (max-width: 600px) {
   .Nav {
     .title-logo {
@@ -272,6 +289,9 @@ nav {
 }
 .search-icon-wrapper {
   cursor: pointer;
+  svg {
+    color: var(--gray);
+  }
 }
 .close-btn {
   align-self: flex-end;

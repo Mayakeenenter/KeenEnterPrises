@@ -72,8 +72,8 @@ function Hero() {
         </div>
       </section>
       <div className="two-img">
-        <img src="/home/ChatGPT-Image-Apr-28-2025-01_20_01-PM.webp" alt="" />
-        <img src="/home/ChatGPT-Image-Apr-28-2025-01_31_39-PM.webp" alt="" />
+        <img src="/home/ChatGPT-Image-Apr-28-2025-01_20_01-PM.webp" alt="our vision" />
+        <img src="/home/ChatGPT-Image-Apr-28-2025-01_31_39-PM.webp" alt="our mission" />
       </div>
     </>
   );

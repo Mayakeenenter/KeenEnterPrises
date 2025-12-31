@@ -33,10 +33,10 @@ function CardFeatures() {
       <p>Every inquiry matters. That’s why our application focuses heavily on accurate, real-time lead syncing.</p>
       <div className="Card-bayut">
         {steps.map((step, index) => (
-          <div class="card1" key={index}>
-            <h4 class="card-title">{step.title}</h4>
-            <div class="go-corner">
-              <div class="go-arrow">
+          <div className="card1" key={index}>
+            <h4 className="card-title">{step.title}</h4>
+            <div className="go-corner">
+              <div className="go-arrow">
                 <FontAwesomeIcon icon={faWebAwesome} />
               </div>
             </div>

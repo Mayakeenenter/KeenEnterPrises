@@ -21,10 +21,10 @@ function NavBar() {
   const location = useLocation();
   const location2 = useLocation();
   const isLocation =
-    location.pathname === "/bitrix" ||
-    location.pathname === "/ziwo";
+    location.pathname === "/bitrix" || location.pathname === "/ziwo";
   const isLocation2 =
-    location2.pathname === "/service" || location2.pathname === "/propertyfinder";
+    location2.pathname === "/service" ||
+    location2.pathname === "/propertyfinder";
   const [open, setopn] = useState(false);
   const [mobile, sermobile] = useState(false);
   const [change, setchange] = useState(false);
@@ -76,7 +76,12 @@ function NavBar() {
   return (
     <section className={`Nav ${change ? "change" : ""}`}>
       <div className="title-logo">
-        <img src="/Keen-Logo2-B.webp" alt="Logo" className="logo-img" />
+        <img
+          src="/Keen-Logo2-B.webp"
+          alt="Logo"
+          className="logo-img"
+          fetchpriority="high"
+        />
         <NavLink to={"/"} className="title">
           <h1>KEEN ENTERPRISES</h1>
         </NavLink>

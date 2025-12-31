@@ -24,6 +24,10 @@
     height: auto;
     margin-bottom: 5px;
   }
+  .prodact-active,
+  .prodact-active svg {
+    color: var(--gold) !important;
+  }
 }
 .Nav.change {
   background-color: var(--black);
@@ -45,15 +49,15 @@
       }
     }
   }
-  .list-link svg {
-    color: var(--white) !important;
+  .search-icon-wrapper svg {
+    color: var(--white) ;
   }
   .list-link li:hover,
   .list-link li a.active,
   .email:hover,
   .prodact-active,
   .prodact-active svg {
-    color: var(--gold);
+    color: var(--gold) !important;
   }
 }
 .list-link {
@@ -263,6 +267,11 @@ nav {
   .list-link.open {
     right: 0;
   }
+  .Nav.change {
+    .search-icon-wrapper svg {
+        color: var(--gray);
+    }
+}
 }
 @media (max-width: 600px) {
   .Nav {

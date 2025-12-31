@@ -2,21 +2,29 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleDown,
   faBars,
-  faCheck,
+  faBriefcase,
+  faChartSimple,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import { NavLink, useLocation } from "react-router-dom";
 import "./NavBar.css";
 import { useEffect, useState } from "react";
 import GoogleSearch from "../GoogleSearch/GoogleSearch";
+import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons/faPhoneVolume";
+import { faCommentDots } from "@fortawesome/free-solid-svg-icons/faCommentDots";
+import { faHouseChimneyWindow } from "@fortawesome/free-solid-svg-icons/faHouseChimneyWindow";
 function NavBar() {
   const [darkMood, setdarkMood] = useState(() => {
     return localStorage.getItem("mood") === "dark";
   });
   const [showSearch, setShowSearch] = useState(false);
   const location = useLocation();
+  const location2 = useLocation();
   const isLocation =
-    location.pathname === "/bitrix" || location.pathname === "/ziwo";
+    location.pathname === "/bitrix" ||
+    location.pathname === "/ziwo";
+  const isLocation2 =
+    location2.pathname === "/service" || location2.pathname === "/propertyfinder";
   const [open, setopn] = useState(false);
   const [mobile, sermobile] = useState(false);
   const [change, setchange] = useState(false);
@@ -85,38 +93,43 @@ function NavBar() {
             <FontAwesomeIcon icon={faAngleDown} />
             <ul className="new-list">
               <li>
-                <FontAwesomeIcon icon={faCheck} />
+                <FontAwesomeIcon icon={faChartSimple} />
+
                 <NavLink to={"/bitrix"} onClick={toggleMenu}>
                   Bitrix24
                 </NavLink>
               </li>
               <li>
-                <FontAwesomeIcon icon={faCheck} />
+                <FontAwesomeIcon icon={faPhoneVolume} />
                 <NavLink to={"/ziwo"} onClick={toggleMenu}>
                   ziwo
                 </NavLink>
               </li>
               <li>
-                <FontAwesomeIcon icon={faCheck} />
+                <FontAwesomeIcon icon={faCommentDots} />
                 <NavLink to={"/partner"} onClick={toggleMenu}>
                   Gupshup
                 </NavLink>
               </li>
             </ul>
           </li>
-          <li className={`li-products ${isLocation ? "prodact-active" : ""}`}>
+          <li className={`li-products ${isLocation2 ? "prodact-active" : ""}`}>
             service
             <FontAwesomeIcon icon={faAngleDown} />
             <ul className="new-list">
               <li>
-                <FontAwesomeIcon icon={faCheck} />
+                <FontAwesomeIcon icon={faBriefcase} />
+
                 <NavLink to={"/service"} onClick={toggleMenu}>
                   Our Service
                 </NavLink>
               </li>
               <li>
-                <FontAwesomeIcon icon={faCheck} />
-                <NavLink to={"/propertyfinder"} >Property Finder & Bayut</NavLink>
+                <FontAwesomeIcon icon={faHouseChimneyWindow} />
+
+                <NavLink to={"/propertyfinder"}>
+                  Property Finder & Bayut
+                </NavLink>
               </li>
             </ul>
           </li>

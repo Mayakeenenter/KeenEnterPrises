@@ -1,4 +1,15 @@
-import { faAngleDown, faCheck } from "@fortawesome/free-solid-svg-icons";
+
+import {
+  
+  faAngleDown,
+  faBriefcase,
+  faChartSimple,
+  faCommentDots,
+  faHouseChimneyWindow,
+  faMagnifyingGlass,
+  faPhoneVolume,
+  
+} from "@fortawesome/free-solid-svg-icons";
 import "./Footer.css";
 import { NavLink, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -21,34 +32,75 @@ function Footer() {
             +971 50 1310408
           </a>
         </div>
-        <ul className="list-link ">
-          <li>
-            <NavLink to={"/"}>home</NavLink>
-          </li>
-            <li className={`li-products ${isLocation ? "prodact-active" : ""}`}>
-            products
-            <FontAwesomeIcon icon={faAngleDown} />
-            <ul className="new-list">
-              <li>
-                <FontAwesomeIcon icon={faCheck} />
-                <NavLink to={"/bitrix"}> Bitrix24 </NavLink>
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faCheck} />
-                <NavLink to={"/ziwo"}> ziwo </NavLink>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <NavLink to={"/service"}>service</NavLink>
-          </li>
-          <li>
-            <NavLink to={"/about"}>about us</NavLink>
-          </li>
-          <li>
-            <NavLink to={"/contact"}>contact us</NavLink>
-          </li>
-        </ul>
+         <ul className="list-link">
+                  <li>
+                    <NavLink to={"/"}>
+                      home
+                    </NavLink>
+                  </li>
+                  <li className={`li-products ${isLocation ? "prodact-active" : ""}`}>
+                    products
+                    <FontAwesomeIcon icon={faAngleDown} />
+                    <ul className="new-list">
+                      <li>
+                        <FontAwesomeIcon icon={faChartSimple} />
+        
+                        <NavLink to={"/bitrix"}>
+                          Bitrix24
+                        </NavLink>
+                      </li>
+                      <li>
+                        <FontAwesomeIcon icon={faPhoneVolume} />
+                        <NavLink to={"/ziwo"} >
+                          ziwo
+                        </NavLink>
+                      </li>
+                      <li>
+                        <FontAwesomeIcon icon={faCommentDots} />
+                        <NavLink to={"/partner"} >
+                          Gupshup
+                        </NavLink>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className={`li-products ${isLocation ? "prodact-active" : ""}`}>
+                    service
+                    <FontAwesomeIcon icon={faAngleDown} />
+                    <ul className="new-list">
+                      <li>
+                        <FontAwesomeIcon icon={faBriefcase} />
+        
+                        <NavLink to={"/service"} >
+                          Our Service
+                        </NavLink>
+                      </li>
+                      <li>
+                        <FontAwesomeIcon icon={faHouseChimneyWindow} />
+        
+                        <NavLink to={"/propertyfinder"}>
+                          Property Finder & Bayut
+                        </NavLink>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <NavLink to={"/about"} >
+                      about us
+                    </NavLink>
+                  </li>
+        
+                  <li className="contact">
+                    <NavLink to={"/contact"}>
+                      contact us
+                    </NavLink>
+                  </li>
+                  <div
+                    className="search-icon-wrapper"
+                  
+                  >
+                    <FontAwesomeIcon icon={faMagnifyingGlass} />
+                  </div>
+                </ul>
       </section>
       <p className="p-footer">Copyright © 2025 - All rights reserved.Powered by Keen Enterprises LLC.</p>
     </footer>

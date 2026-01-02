@@ -3,7 +3,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { SwiperSlide, Swiper } from "swiper/react";
-function Slider({ slider, one, two }) {
+function Slider({ slider, one }) {
   return (
     <div className="slider">
       <Swiper

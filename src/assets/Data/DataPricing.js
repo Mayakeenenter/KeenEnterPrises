@@ -377,3 +377,73 @@ export const dropdown3 = [
   },
 ];
 
+export   const imgslider = [
+    {
+      img: "/slider/WhatsApp-Image-2025-01-09-at-6.15.10-PM1-300x135-1.webp",
+      alt: "Successful Stories",
+      lazy: "lazy",
+    },
+    {
+      img: "/slider/WhatsApp-Image-2025-01-09-at-6.15.10-PM2.webp",
+      alt: "Successful Stories",
+      lazy: "lazy",
+    },
+    {
+      img: "/slider/WhatsApp-Image-2025-01-09-at-6.15.12-PM-768x382-1.webp",
+      alt: "Successful Stories",
+      lazy: "lazy",
+    },
+    {
+      img: "/slider/WhatsApp-Image-2025-01-09-at-6.15.13-PM.webp",
+      alt: "Successful Stories",
+      lazy: "lazy",
+    },
+    {
+      img: "/slider/WhatsApp-Image-2025-01-09-at-6.15.13-PM1-150x150-1.webp",
+      alt: "Successful Stories",
+      lazy: "lazy",
+    },
+    {
+      img: "/slider/WhatsApp-Image-2025-01-09-at-6.15.40-PM.webp",
+      alt: "Successful Stories",
+      lazy: "lazy",
+    },
+  ];
+
+export   const imgslider2 = [
+    {
+      img: "/slider2/1 (1).webp",
+      alt: "information about bitrix",
+      lazy: "lazy",
+    },
+    {
+       img: "/slider2/1 (2).webp",
+      alt: "information about bitrix",
+      lazy: "lazy",
+    },
+    {
+       img: "/slider2/1 (3).webp",
+      alt: "information about bitrix",
+      lazy: "lazy",
+    },
+    {
+       img: "/slider2/1 (4).webp",
+      alt: "information about bitrix",
+      lazy: "lazy",
+    },
+    {
+       img: "/slider2/1 (5).webp",
+      alt: "information about bitrix",
+      lazy: "lazy",
+    },
+    {
+       img: "/slider2/1 (6).webp",
+      alt: "information about bitrix",
+      lazy: "lazy",
+    },
+    {
+       img: "/slider2/1 (7).webp",
+      alt: "information about bitrix",
+      lazy: "lazy",
+    },
+  ];

@@ -7,6 +7,7 @@ import OurServices from "../../component/OurServices/OurServices";
 import Pricing from "../../component/Pricing/Pricing";
 import Slider from "../../component/Slider/Slider";
 import Values from "../../component/Values/Values";
+import { imgslider } from "../../Data/DataPricing";
 
 
 export default function Home() {
@@ -48,7 +49,9 @@ export default function Home() {
         <Pricing />
         <CardLine text={"Business Partners"} />
         <InnovationTools />
-        <Slider />
+        <Slider
+        slider={imgslider} 
+        one={true}/>
         <Outlet />
       </>
     

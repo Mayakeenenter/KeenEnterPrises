@@ -1,6 +1,8 @@
 import "./Products.css";
 import CardLine from "../../component/CardLine/CardLine";
 import CardBitrix from "../../component/CardBitrix/CardBitrix";
+import Slider from "../../component/Slider/Slider";
+import { imgslider2 } from "../../Data/DataPricing";
 
 
 function Products() {
@@ -25,6 +27,8 @@ function Products() {
         partThree={":Your all-in-One Solution!"}
         img={"/product/bitrixman.webp"}
       />
+      <Slider
+      slider={imgslider2}/>
       <img
         src="/product/copilet.webp"
         alt=""

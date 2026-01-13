@@ -2,11 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 
-import {
-  createBrowserRouter,
-  Outlet,
-  ScrollRestoration,
-} from "react-router-dom";
+import { createBrowserRouter, Outlet } from "react-router-dom";
 import Home from "./assets/pages/Home/Home.jsx";
 import Products from "./assets/pages/Products/Products.jsx";
 import Service from "./assets/pages/Service/Service.jsx";
@@ -24,7 +20,6 @@ import Ai from "./assets/pages/Ai/Ai.jsx";
 const RootLayout = () => {
   return (
     <>
-      <ScrollRestoration />
       <NavBar />
       <Outlet />
       <Footer />

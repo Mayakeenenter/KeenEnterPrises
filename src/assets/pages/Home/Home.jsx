@@ -12,7 +12,7 @@ import { imgslider } from "../../Data/DataPricing";
 
 export default function Home() {
   return (
-    <>
+    <main>
       
         
           <title>
@@ -53,7 +53,7 @@ export default function Home() {
         slider={imgslider} 
         one={true}/>
         <Outlet />
-      </>
+      </main>
     
   );
 }

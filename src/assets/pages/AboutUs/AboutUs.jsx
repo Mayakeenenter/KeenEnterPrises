@@ -3,7 +3,7 @@ import CardLine from "../../component/CardLine/CardLine";
 
 export default function AboutUs() {
   return (
-    <>
+    <main>
       <title>Our Story & Vision | About us | Keen Enterprises</title>
       <meta
         name="description"
@@ -18,6 +18,6 @@ export default function AboutUs() {
         <CardLine text={"About Us"} />
       </div>
       <CardAbout />
-    </>
+    </main>
   );
 }

@@ -116,6 +116,12 @@ function NavBar() {
                   Gupshup
                 </NavLink>
               </li>
+              <li>
+                <FontAwesomeIcon icon={faCommentDots} />
+                <NavLink to={"/ai"} onClick={toggleMenu}>
+                  AI agent
+                </NavLink>
+              </li>
             </ul>
           </li>
           <li className={`li-products ${isLocation2 ? "prodact-active" : ""}`}>

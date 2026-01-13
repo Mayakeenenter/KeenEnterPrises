@@ -4,7 +4,7 @@ import Form from "../../component/Form/Form";
 
 export default function ContactUs() {
   return (
-    <>
+    <main>
       <title>
         contact us | Get Expert Support for Your Business | Keen Enterprises{" "}
       </title>
@@ -21,6 +21,6 @@ export default function ContactUs() {
         <CardLine text={"Contact Us"} />
       </div>
       <Form />
-    </>
+    </main>
   );
 }
